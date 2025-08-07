@@ -158,4 +158,47 @@ const R = parseFloat(input14);
 const pi = 3.1416;
 const area = pi * R * R;
 console.log(area.toFixed(2));
+
+
+//todos os divisores
+let resultado = [];
+
+for (let i = 1; i <= X; i++) {
+    if (X % i === 0) {
+        resultado.push(i);
+    }
+}
+
+console.log(resultado.join(" "));
+
+//quadrante
+if (X === 0 || Y === 0) {
+    console.log("eixos");
+} else if (X > 0 && Y > 0) {
+    console.log("1º trimestre");
+} else if (X < 0 && Y > 0) {
+    console.log("2º trimestre");
+} else if (X < 0 && Y < 0) {
+    console.log("3º trimestre");
+} else if (X > 0 && Y < 0) {
+    console.log("4º trimestre");
+}
+
+//Zerinho ou Um
+if (A !== B && A !== C) {
+  console.log("A");
+} else if (B !== A && B !== C) {
+  console.log("B");
+} else if (C !== A && C !== B) {
+  console.log("C");
+} else {
+  console.log("*");
+}
+
+//potências simples
+
+const resultado = Math.pow(x, y);
+console.log(resultado.toFixed(4));
+
+
 //# sourceMappingURL=atividade1.js.map
